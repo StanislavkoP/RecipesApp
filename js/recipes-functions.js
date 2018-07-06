@@ -60,7 +60,7 @@ const generateRecipeDOM = (recipeElement) => {
 	};
 
 	if (hasIngridient.length === 0) {
-		recipeStatus.textContent = 'У вас нету никаких ингридиентов';
+		recipeStatus.textContent = 'У вас нет никаких ингридиентов';
 
 	} else if (hasIngridient.length === recipeElement.ingredients.length) {
 		recipeStatus.textContent = 'У вас имеются все ингридиенты'
