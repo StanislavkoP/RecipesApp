@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Список рецептов</title>
+	<title>Рецепт</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col m6 offset-m3 center-align">
+				<input type="text" id="name-recipe">
+				<textarea name="guide-recipe" id="guide-recipe" cols="30" rows="10"></textarea>
+
+				<div>
+					<h4>Ингридиенты:</h4>
+				</div>
+				<ul id="list-ingredients">
+
+				</ul>
+				<div class="input-field">
+					<input type="text" name="add-ingredient-text" id="add-ingredient-text">
+					<label for="add-ingredient-text">Введите название ингридиента</label>
+				</div>
+				<button id="add-indredient" class="waves-effect waves-light btn-large purple lighten-1">
+					<i class="large material-icons  left">add_circle</i>Добавить ингридиент</button>
+				<button id="btn-removeRecipe" class="waves-effect waves-light btn-large red lighten-1">
+					<i class="large material-icons  left">remove_circle_outline</i>Удалить рецепт</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/recipes-functions.js"></script>
+	<script src="js/recipes-edit.js"></script>
+</body>
+
+</html>
