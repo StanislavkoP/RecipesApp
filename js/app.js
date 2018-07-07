@@ -35,11 +35,10 @@ inputSearchRecipe.addEventListener('input', function (e) {
 	renderRecipes(recipes, filters);
 });
 
+
 window.addEventListener('storage', (e) => {
-    if (e.key === 'recipes') {
-        recipes = JSON.parse(e.newValue);
-        renderRecipes(recipes, filters);
-    }
-})
-
-
+	if (e.key === 'recipes') {
+		recipes = JSON.parse(e.newValue);
+		renderRecipes(recipes, filters);
+	}
+});

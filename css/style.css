@@ -64,8 +64,8 @@ textarea {
 	color: white;
 }
 
-#btn-removeRecipe {
-	margin-top: 75px;
+#save-recipe,#btn-removeRecipe  {
+	margin-top: 35px;
 }
 
 .ingredient-element {

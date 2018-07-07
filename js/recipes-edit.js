@@ -59,6 +59,13 @@ btnRemoveRecipe.addEventListener('click', function () {
 });
 
 
+const btnBackToListRecipes = document.querySelector('#save-recipe');
+
+btnBackToListRecipes.addEventListener('click', function () {
+	location.assign('/index.html')
+});
+
+
 
 window.addEventListener('storage', (e) => {
 	if (e.key === 'recipes') {

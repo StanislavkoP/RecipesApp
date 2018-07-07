@@ -18,6 +18,9 @@ const saveRecipes = function (recipes) {
 }
 
 
+
+
+
 // Render application recipes
 const renderRecipes = (recipes, filters) => {
 	const recipeList = document.querySelector('#recipe-list');
