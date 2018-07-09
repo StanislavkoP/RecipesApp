@@ -6,6 +6,8 @@ const titleRecipe = document.querySelector('#name-recipe');
 const guideRecipe = document.querySelector('#guide-recipe');
 const btnAddIngredient = document.querySelector('#add-indredient');
 const btnRemoveRecipe = document.querySelector('#btn-removeRecipe');
+const btnSaveRecipe = document.querySelector('#save-recipe');
+const btnBackToListRecipes = document.querySelector('#btn-backToList');
 
 
 
@@ -66,12 +68,14 @@ btnRemoveRecipe.addEventListener('click', function () {
 });
 
 
-const btnBackToListRecipes = document.querySelector('#save-recipe');
+
+btnSaveRecipe.addEventListener('click', function () {
+	location.assign('/index.html')
+});
 
 btnBackToListRecipes.addEventListener('click', function () {
 	location.assign('/index.html')
 });
-
 
 
 window.addEventListener('storage', (e) => {
