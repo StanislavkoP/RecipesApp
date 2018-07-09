@@ -1,0 +1,214 @@
+body {
+	background: #0F2027;
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+	color: white;
+	min-height: 100vh;
+}
+
+#search-recipe {
+	color: white;
+}
+
+.recipe-list__recipeItem {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.recipe-list__recipeItem:last-child {
+	border-bottom: none;
+}
+
+.collection .collection-item {
+	background-color: transparent;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.collection a.collection-item {
+	color: white;
+}
+
+.collection a.collection-item:not(.active):hover {
+	background-color: #26a69aa3;
+	-webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+	background-color: #2EE59D;
+	color: #fff;
+	transform: translateY(-7px);
+}
+
+#add-recipe {
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	margin-bottom: 12px;
+}
+
+#name-recipe {
+	font-size: 50px;
+	padding: 10px 0;
+	color: white;
+}
+
+.btn-large i {
+	font-size: 2.4rem;
+}
+
+textarea {
+	height: 13rem;
+	border-color: white;
+	color: white;
+}
+
+.wrap-btn-backTolist{
+	max-width: 1280px;
+	margin: 0 auto
+}
+
+#save-recipe,
+#btn-removeRecipe {
+	margin-top: 35px;
+}
+
+#list-ingredients {
+	margin-bottom: 34px;
+}
+
+.head-explanation{
+	display: flex;
+	justify-content: space-between;
+    max-width: 321px;
+	margin: 0 auto;
+}
+
+.ingredient-element {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 321px;
+	margin: 10px auto;
+	border-bottom: 1px solid white;
+	padding: 10px 0;
+}
+
+.ingredient-element label {
+	display: flex;
+	justify-content: space-between;
+	width: calc(100% - 53px);
+	cursor: pointer;
+}
+
+.ingridientText {
+	width: 100%;
+	line-height: 25px;
+	font-size: 1.3rem;
+	padding-left: 36px;
+	word-break: break-word;
+}
+
+.remove-ingredient {
+	float: right;
+	margin-right: 11px;
+}
+
+#add-ingredient-text {
+	color: white;
+	font-size: 20px;
+}
+
+[type="checkbox"]+span:not(.lever) {
+	line-height: 25px;
+	font-size: 1.3rem;
+	padding-left: 28px;
+}
+
+[type="checkbox"]+span:not(.lever):before,
+[type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+	border: 2px solid white;
+	width: 22px;
+	height: 22px;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+	width: 22px;
+	height: 22px;
+	margin-top: 3px;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):before {
+	top: 3px;
+	left: 2px;
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+	border-bottom: 1px solid white;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid white;
+	-webkit-box-shadow: 0 1px 0 0 white;
+	box-shadow: 0 1px 0 0 white;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+	color: white;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+	border: 2px solid #ab47bc;
+	background-color: #ab47bc;
+}
+
+.input-field>label {
+	color: white;
+}
+
+[type="checkbox"]+span:not(.lever) {
+	word-break: break-all;
+	max-width: 184px;
+}
+
+@media only screen and (max-width: 350px) {
+	.btn-large {
+		font-size: 12px;
+	}
+}
